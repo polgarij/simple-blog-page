@@ -47,28 +47,28 @@
  * containerre meghívni a .clearfix class-t a HELPEREK szekcióból.
  */
 
- .layout__item--full-width               { width: 100%; }
+ .layout_item--full-width               { width: 100%; }
 
- .layout__item--70-percent               { width: 70%; }
+ .layout_item--70-percent               { width: 70%; }
  
- .layout__item--66-percent-w-gutter      { width: calc(66.6% - 1.071rem); } /* [1] */
+ .layout_item--66-percent-w-gutter      { width: calc(66.6% - 1.071rem); } /* [1] */
  
- .layout__item--50-percent-w-gutter      { width: calc(50%   - 1.071rem); } /* [1] */
+ .layout_item--50-percent-w-gutter      { width: calc(50%   - 1.071rem); } /* [1] */
  
- .layout__item--33-percent-w-gutter      { width: calc(33.3% - 1.071rem); } /* [1] */
- 
- 
- .layout__item--content-w-sticked-footer { min-height: calc(100vh - 80px); }
+ .layout_item--33-percent-w-gutter      { width: calc(33.3% - 1.071rem); } /* [1] */
  
  
- .layout__item--centered-horizontally { /* [2] */
+ .layout_item--content-w-sticked-footer { min-height: calc(100vh - 80px); }
+ 
+ 
+ .layout_item--centered-horizontally { /* [2] */
    margin-left:  auto;
    margin-right: auto;
  }
  
  
- .layout__item--floated-left  { float: left; } /* [3] */
- .layout__item--floated-right { float: right; }/* [3] */
+ .layout_item--floated-left  { float: left; } /* [3] */
+ .layout_item--floated-right { float: right; }/* [3] */
  
  
  
