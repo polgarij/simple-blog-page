@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Homepage for a blog site.">
   <title>Blog Homepage</title>
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout.css">
 
 
 <body>
@@ -15,10 +17,10 @@
   <div class="layout">
 
 
-    <header class="header layout_item-full-width">
-      <div class="header-wrapper">
+    <header class="header layout_item--full-width">
+      <div class="header-wrapper layout_item--70-percent layout_item--centered-horizontally clearfix">
         <div class="header-content">
-          <a href="#" class="button-subscribe">Subscribe</a>
+          <a href="#" class="button-subscribe button button--secondary-solid">Subscribe</a>
           <a href="index.html">
             <img src="assets/logo_50.svg" alt="site logo" class="logo">
           </a>
@@ -27,8 +29,8 @@
     </header>
 
 
-    <section class="navigation">
-      <div class="nav-wrapper">
+    <section class="navigation layout_item--full-width gutter--horizontal-big">
+      <div class="nav-wrapper layout_item--70-percent layout_item--centered-horizontally">
         <nav class="navigation_link-container">
           <a href="#" class="nav-link">Business</a>
           <a href="#" class="nav-link">Culture</a>
@@ -43,28 +45,29 @@
     </section>
 
 
-    <main class="content-w-sticked-footer">
+    <main class="layout_item--content-w-sticked-footer layout_item--70-percent layout_item--centered-horizontally gutter--horizontal-big clearfix">
 
 
-      <section class="layout_main">
+      <section class="layout_item--66-percent-w-gutter layout_item--floated-left">
 
-        <div class="main-post">
+        <div class="post post--featured gutter--horizontal-small">
           <h6>April 4, 2020 / by Amy / 0 Comments</h6>
           <h2>Featured blog post</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+          <p class="post_lede">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et
             dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
-          <button class="readmore-white"><a href="/">Read more</a></button>
+          <a href="/" class="button button--secondary-hollow">Read more</a>
         </div>
 
-        <div class="categories">
+        <div class="layout_item--full-width gutter--horizontal-small clearfix">
 
-          <div class="category-card">
+          <div class="category-card layout_item--50-percent-w-gutter layout_item--floated-left">
             <img src="assets/samson-ZGjbiukp_-A-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Business</h6>
             <p class=category-card_text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
-          <div class="category-card">
+
+          <div class="category-card layout_item--50-percent-w-gutter layout_item--floated-right">
             <img src="assets/vitaliy-lyubezhanin-gfVofr15ICc-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Culture</h6>
             <p class=category-card_text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
@@ -72,136 +75,133 @@
 
         </div>
 
-        <div class="blog-post">
+
+        <div class="post gutter--horizontal-small">
           <h6 class="post_metadata">March 3, 2020 / by Marc / 8 Comments</h6>
           <h2>Sample blog post</h2>
           <p class="post_lede">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus
-            est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-          <button class="readmore"><a href="/">Read more</a></button>
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+          <a href="/" class="button button--primary-hollow">Read more</a>
         </div>
 
-        <div class="post-with-image">
+        <div class="gutter--horizontal-small">
           <img src="assets/sean-o-KMn4VEeEPR8-unsplash.jpg" alt="post image" class="post_image">
-          <div class="post-w-cover">
+          <div class=" post post-w-cover">
             <h6 class="post_metadata">Febrary 2, 2020 / by Jacob / 14 Comments</h6>
             <h2>Blog post with image</h2>
-            <p class="post_lede">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore
-              et
-              dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
-            <button class="readmore"><a href="/">Read more</a></button>
+            <p class="post_lede">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
+              <a href="/" class="button button--primary-hollow">Read more</a>
           </div>
         </div>
 
-        <div class="blog-post">
+        <div class="post">
           <h6 class="post_metadata">January 1, 2020 / by Chris / 7 Comments</h6>
           <h2>Another blog post</h2>
           <p class="post_lede">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus
-            est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-          <button class="readmore"><a href="/">Read more</a></button>
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+          <a href="/" class="button button--primary-hollow">Read more</a>
         </div>
 
       </section>
 
 
-      <aside>
+      <aside class="layout_item--33-percent-w-gutter layout_item--floated-right">
 
-        <div class="sidebar">
+        <div class="sidebar-element gutter--horizontal-small">
           <div class="sidebar-element_header">
             <h6 class="sidebar-element_title">Latest news</h6>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/younes-barri-zsHPnX2zstw-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Design</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/boxed-water-is-better-cXJCpV2Jv1Y-unsplash.jpg" alt="card image"
               class="category-card_image">
             <h6 class="category-card_name">Health</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/marco-oriolesi-wqLGlhjr6Og-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Politics</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
         </div>
         <div class="sidebar-element_call-to-action">
-          <button class="sidebar-btn"><a href="#">View all news</a></button>
+          <a href="#" class="sidebar-element_cta-link">View all news</a>
         </div>
 
-        <div class="sidebar">
+        <div class="sidebar-element gutter--horizontal-small">
           <div class="sidebar-element_header">
             <h6 class="sidebar-element_title">Recommended news</h6>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Science</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">Travel</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
-          <div class="category-card">
+          <div class="category-card category-card--nested clearfix">
             <img src="assets/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="card image" class="category-card_image">
             <h6 class="category-card_name">World</h6>
             <p class="category-card_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
           </div>
           <div class="sidebar-element_call-to-action">
-            <button class="sidebar-btn">View all news</button>
+            <a href="/" class="sidebar-element_cta-link">View all news</a>
           </div>
         </div>
 
-        <div class="sidebar">
+        <div class="sidebar-element">
           <div class="sidebar-element_header">
             <h6 class="sidebar-element_title">Categories</h6>
           </div>
           <div>
             <ul class="sidebar-element_list">
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Business</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Business</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Culture</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Culture</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Design</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Design</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Health</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Health</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Politics</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Politics</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Science</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Science</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">Travel</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">Travel</a>
               </li>
-              <li class="sidebar-element_list item">
-                <a href="/" class="category-link">World</a>
+              <li class="sidebar-element_list-item">
+                <a href="/" class="sidebar-element_category-link">World</a>
               </li>
             </ul>
           </div>
           <div class="sidebar-element_call-to-action">
-            <button class="sidebar-btn"><a href="#">See all</a></button>
+            <a href="#" class="sidebar-element_cta-link">See all</a>
           </div>
         </div>
       </aside>
 
 
       <footer>
-        <div class="footer-content">
+        <div class="footer layout_item--full-width">
           <p class="footer_copyright">
             © 2020 Copyright
             <span class="footer_brand-name">Brand Name</span> / Design by
-            <span class="footer_student_name">Student Name</span>
+            <span class="footer_student-name">Student Name</span>
           </p>
         </div>
       </footer>
