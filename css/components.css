@@ -165,7 +165,14 @@
           border-color:   #6200ea;
           color:          #6200ea;
         }
-  
+
+        .nav-link-contact {
+            color:          #FFFFFF;
+            display: block;
+            float: right;
+        }
+
+        
   
   
   
@@ -208,9 +215,18 @@
     background-size:  cover;
   }
   
+  .contact-links ul{
+      list-style: none;
+  }
   
-  
-  
+  .contact-links li {
+      display: inline;
+  }
+
+  a.social-icon {
+    font-size: 1.25rem;
+    color: #6200EA;   
+  }
   
   /*------------------------------------*\
     #KATEGÓRIA KÁRTYA
